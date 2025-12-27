@@ -7,7 +7,7 @@ const sections = document.querySelectorAll('section');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 const skillItems = document.querySelectorAll('.skill-item');
-const contactForm = document.getElementById('contact-form');
+// const contactForm = document.getElementById('contact-form');
 const cursor = document.querySelector('.cursor');
 const cursorFollower = document.querySelector('.cursor-follower');
 const scrollProgress = document.querySelector('.scroll-progress');
@@ -181,47 +181,47 @@ filterBtns.forEach(btn => {
 });
 
 // ===== Contact Form =====
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+// contactForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
     
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
+//     // Get form data
+//     const formData = new FormData(contactForm);
+//     const data = Object.fromEntries(formData);
     
-    // Simple validation animation
-    const inputs = contactForm.querySelectorAll('input, textarea');
-    let isValid = true;
+//     // Simple validation animation
+//     const inputs = contactForm.querySelectorAll('input, textarea');
+//     let isValid = true;
     
-    inputs.forEach(input => {
-        if (!input.value.trim()) {
-            isValid = false;
-            input.style.borderColor = '#ff4444';
-            input.style.animation = 'shake 0.5s ease';
+//     inputs.forEach(input => {
+//         if (!input.value.trim()) {
+//             isValid = false;
+//             input.style.borderColor = '#ff4444';
+//             input.style.animation = 'shake 0.5s ease';
             
-            setTimeout(() => {
-                input.style.animation = '';
-            }, 500);
-        } else {
-            input.style.borderColor = 'transparent';
-        }
-    });
+//             setTimeout(() => {
+//                 input.style.animation = '';
+//             }, 500);
+//         } else {
+//             input.style.borderColor = 'transparent';
+//         }
+//     });
     
-    if (isValid) {
-        // Success animation
-        const btn = contactForm.querySelector('.submit-btn');
-        btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
-        btn.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
+//     if (isValid) {
+//         // Success animation
+//         const btn = contactForm.querySelector('.submit-btn');
+//         btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
+//         btn.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
         
-        // Reset form
-        setTimeout(() => {
-            contactForm.reset();
-            btn.innerHTML = '<span>Send Message</span> <i class="fas fa-paper-plane"></i>';
-            btn.style.background = '';
-        }, 3000);
+//         // Reset form
+//         setTimeout(() => {
+//             contactForm.reset();
+//             btn.innerHTML = '<span>Send Message</span> <i class="fas fa-paper-plane"></i>';
+//             btn.style.background = '';
+//         }, 3000);
         
-        console.log('Form submitted:', data);
-    }
-});
+//         console.log('Form submitted:', data);
+//     }
+// });
 
 // Add shake animation
 const style = document.createElement('style');
