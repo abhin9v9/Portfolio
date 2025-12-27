@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Abhinav | Portfolio</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#home" class="logo">Abhinav<span>.</span></a>
+        <div class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Abhinav Chaudhary</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>A passionate developer crafting beautiful and functional digital experiences. I specialize in building modern web applications with clean code and intuitive design.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="https://drive.google.com/file/d/1oNY3DLr_ITvh4RRkaadrdMsEqXK1Rex4/view?usp=sharing" class="btn btn-outline">Download CV</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-border"></div>
+                <img src="perman.jpg" alt="Abhinav Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <p class="section-subtitle">Recent work I've done</p>
+        
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <!-- <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="design">UI/UX</button> -->
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="E-Commerce Platform">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://ecommerceapp-hfql.onrender.com/" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/abhin9v9/EcommerceApp" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack shopping platform with payment integration, inventory management, and real-time order tracking.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Braintree</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="project-card" data-category="web">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Analytics Dashboard">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Analytics Dashboard</h3>
+                    <p>Interactive data visualization dashboard with real-time charts, custom reports, and export functionality.</p>
+                    <div class="project-tech">
+                        <span>Vue.js</span>
+                        <span>D3.js</span>
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="project-card" data-category="mobile">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500" alt="Fitness Tracker App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Fitness Tracker App</h3>
+                    <p>Mobile application for tracking workouts, calories, and health metrics with personalized recommendations.</p>
+                    <div class="project-tech">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                        <span>Redux</span>
+                    </div>
+                </div>
+            </div> -->
+<!-- 
+            <div class="project-card" data-category="design">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500" alt="Brand Identity System">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Brand Identity System</h3>
+                    <p>Complete brand identity design including logo, color palette, typography, and design guidelines.</p>
+                    <div class="project-tech">
+                        <span>Figma</span>
+                        <span>Illustrator</span>
+                        <span>Photoshop</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="project-card" data-category="web">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500" alt="Task Management">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Task Management System</h3>
+                    <p>Collaborative project management tool with drag-and-drop interface, team features, and integrations.</p>
+                    <div class="project-tech">
+                        <span>Next.js</span>
+                        <span>Prisma</span>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="project-card" data-category="mobile">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500" alt="Food Delivery App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://rush-chat-futj.onrender.com/" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/abhin9v9/RUSH_CHAT" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Rush_Chat App</h3>
+                    <p>On-demand chat application with real-time messaging, group chats, and multimedia sharing.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Socket.io</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <p class="section-subtitle">Technologies I work with</p>
+        
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="95">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h4>HTML5</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="90">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h4>CSS3</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="85">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="80">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <h4>React</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="85">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-node-js"></i>
+                        </div>
+                        <h4>Node.js</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="80">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h4>Python</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="75">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>MongoDB</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="70">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>MySQL</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="90">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
+                        <h4>Git</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="85">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-figma"></i>
+                        </div>
+                        <h4>Figma</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="80">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-docker"></i>
+                        </div>
+                        <h4>Docker</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="75">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-aws"></i>
+                        </div>
+                        <h4>AWS</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Education</span></h2>
+        <p class="section-subtitle">Academic Background & Certifications</p>
+        
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-date">2021 - 2025</div>
+                    <h3>Bachelor of Computer Science</h3>
+                    <h4>Bundelkhand Institute of Engineering & Technology</h4>
+                    <p>Completed B.Tech in Computer Science with a focus on Software Engineering and Web Technologies, including an academic project on Modern Web Application Architecture.</p>
+                    <div class="timeline-tags">
+                        <span>GPA: 6.99/10</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-date">2023</div>
+                    <h3>AWS Solutions Architect</h3>
+                    <h4>Amazon Web Services</h4>
+                    <p>Professional certification demonstrating expertise in designing distributed systems on AWS, including compute, networking, storage, and database services.</p>
+                    <div class="timeline-tags">
+                        <span>Cloud Computing</span>
+                        <span>Professional</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-date">2022</div>
+                    <h3>Full Stack Web Development</h3>
+                    <h4>Udemy Professional Certificate</h4>
+                    <p>Comprehensive bootcamp covering modern web development stack including React, Node.js, MongoDB, and deployment strategies.</p>
+                    <div class="timeline-tags">
+                        <span>MERN Stack</span>
+                        <span>60+ Hours</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-date">2019 - 2020</div>
+                    <h3>Intermediate</h3>
+                    <h4>St. Joseph Inter College</h4>
+                    <p>Focused on Mathematics, with 12th-grade PCM (Physics, Chemistry, Mathematics)</p>
+                    <div class="timeline-tags">
+                        <span>86%</span>
+                        <!-- <span>CS Club President</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <p class="section-subtitle">Let's work together</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>Lucknow, India</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>chaudhary.abhin9v@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div> -->
+
+                <div class="contact-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/abhinav-chaudhary-94778922a/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/abhin9v9"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/Abhinnv"><i class="fab fa-twitter"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="input-box">
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                    <span class="focus-border"></span>
+                </div>
+                <button type="submit" class="btn submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#home">Abhinav<span>.</span></a>
+                <p>Building digital experiences that matter.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <a href="#">Web Development</a>
+                <a href="#">Mobile Apps</a>
+                <a href="#">UI/UX Design</a>
+                <a href="#">Consulting</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Abhinav. All Rights Reserved.</p>
+            <a href="#home" class="scroll-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
