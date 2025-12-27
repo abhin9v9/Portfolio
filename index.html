@@ -445,7 +445,8 @@
                 </div>
             </div>
 
-            <form class="contact-form" id="contact-form" netlify>
+            <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
                 <div class="form-group">
                     <div class="input-box">
                         <input type="text" name="name" placeholder="Your Name" required>
